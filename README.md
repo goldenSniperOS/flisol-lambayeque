@@ -1,2 +1,2 @@
-# flisol-lambayeque
-Sistema de inscripciones hecho para Flisol Lambayeque 2015 en SnipeFramework (Laravel Copy :v ) 
+# SnipeFramework
+Framework MVC in PHP. I extracted from phpacademy.org and i added some things of Laravel Framework
