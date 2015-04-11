@@ -29,6 +29,17 @@ return array(
 
 	'public' => 'http://'.$_SERVER['SERVER_NAME'].rtrim($_SERVER['PHP_SELF'],'index.php'),
 
+		/*
+	|--------------------------------------------------------------------------
+	| Config Path
+	|--------------------------------------------------------------------------
+	| 
+	| Aqui se toma la ruta a la carpeta de Configuracion del Proyecto
+	| 
+	*/
+
+	'config' => rtrim(__FILE__,'paths.php').'/config',
+
 	/*
 	|--------------------------------------------------------------------------
 	| Base Path

@@ -10,7 +10,6 @@ class Home extends Controller
 		{
 			$_SESSION['status'] = '';	
 		}
-		$name = User::find(1)->username;
 		$this->view('home/index',['name' => $name,'status'=> $_SESSION['status']]);
 		$_SESSION['status'] = '';
 	}
