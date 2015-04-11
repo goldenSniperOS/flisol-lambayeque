@@ -27,7 +27,7 @@ return array(
 			'host' => '127.0.0.1',
 			'username' => 'root',
 			'password' => '',
-			'database' => 'mvc',
+			'database' => 'flisol',
 			'charset' => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix' => ''
