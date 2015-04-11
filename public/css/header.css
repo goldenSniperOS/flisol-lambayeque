@@ -40,8 +40,8 @@ ul li {
 	box-shadow: 0 1px 5px #999;
 }
 
-#main-logo > img {
-	background: url(img/logo.jpg);
+#main-logo {
+	background: url(../img/logo.jpg);
 	background-size:100% 100%;
 	width: 100%;
 	height: 100px;

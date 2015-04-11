@@ -78,11 +78,18 @@
 }
 
 #w1 {
-	background-image: url('../img/bg_ws_01.png');
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3)
+    ),  
+    url(../img/bg_ws_01.jpg);
 }
 
+
+
 	#w1 p {
-		color: #B25900;
+		color: #E17C24;
 	}
 
 	#w1 p > a {
@@ -94,11 +101,16 @@
 	}
 
 #w2 {
-	background-image: url('../img/bg_ws_02.png');
+	background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ),  
+    url(../img/bg_ws_02.jpg);   
 }
 
 	#w2 p {
-		color: #FFA5A5;
+		color: #E17C24;
 	}
 
 	#w2 p > a {
