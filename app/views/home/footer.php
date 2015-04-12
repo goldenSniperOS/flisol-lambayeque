@@ -105,8 +105,8 @@
 		    js.src = "//connect.facebook.net/es_ES/all.js";
 		    fjs.parentNode.insertBefore(js, fjs);
 		  }(document, 'script', 'facebook-jssdk'));
-		function shareOnFacebook() {
-		    FB.ui(
+		$('.boton-shared').on('click',function(e){
+			FB.ui(
 		      {
 		        method        : 'feed',
 		        name          : 'FLISOL CHICLAYO 2015',
@@ -135,5 +135,6 @@
 		        }
 		      }
 		    );
-		  }
+		    e.preventDefault();
+		});
 	</script>

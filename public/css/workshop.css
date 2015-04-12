@@ -15,12 +15,6 @@
 	font-size: 1.8rem;
 }
 
-.workshop a, 
-.workshop a:hover {
-	color: #fff;
-	font-weight: 400;
-}
-
 .main-info {
 	
 }
@@ -67,11 +61,6 @@
 	margin-right: 10px;
 }
 
-.workshop .btn,
-.workshop .btn:hover {
-	padding: 10px 35px;
-	color: #fff;
-}
 
 .more-info-link {
 	margin: 0 15px;
@@ -87,19 +76,6 @@
 }
 
 
-
-	#w1 p {
-		color: #F27E27;
-	}
-
-	#w1 p > a {
-		color: #661900;
-	}
-
-	#w1 .btn {
-		background-color: #661900;
-	}
-
 #w2 {
 	background-image: 
     linear-gradient(
@@ -111,15 +87,6 @@
 
 	#w2 p {
 		color: #F27E27;
-	}
-
-	#w2 p > a {
-		color: #fff;
-	}
-
-	#w2 .btn {
-		color: #444;
-		background-color: #eee;
 	}
 
 /* Small devices (tablets, 768px and up) */
@@ -157,7 +124,7 @@
 	margin-top: 1em;
 }
 .boton-shared{
-	display: block;
+	display: inline-block;
 	padding: 15px;
 	color: #000;
 	border:2px solid #47639e;
