@@ -2,7 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+<<<<<<< HEAD
 	<title>Flisol 2015</title>
+=======
+	<title>FLISOL Lambayeque 2015</title>
+>>>>>>> origin/master
 	<?=HTML::style('css/bootstrap.min.css')?>
 	<?=HTML::style('css/header.css')?>
 	<?=HTML::style('css/workshop.css')?>
@@ -24,7 +28,6 @@
 							<h2>Conferencias sobre Software Libre FLISOL 2015</h2>
 							<p>Disfruta de una mañana llena de experiencias con y nuevos conocimientos que te harán entender mejor el Software Libre</p>
 							<a href="#" class="btn boton-shared" data-event="conferencias">ME APUNTO!</a>
-							<a href="#" class="more-info-link">quiero más información</a>
 						</div>
 					</div>
 				</div>
@@ -33,7 +36,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 date-info">
-						<h3 class="highlighted">HORARIO: TARDE</h3>
+						<h3 class="highlighted">HORARIO: MAÑANA</h3>
 							<h3 class="highlighted">INGRESO GRATIS</h3>
 							<h3 class="highlighted">VACANTES LIMITADAS</h3>
 							<h3 class="highlighted">25 de abril</h3>
@@ -43,16 +46,14 @@
 						<p>Momento para aprender en lo práctico el uso de software libre, como la programacion del mismo.
 							Disfruta de la introducción a muchos lenguajes y mucho software
 						</p>
-						<a href="#" class="more-info-link">quiero más información</a>
 						<a href="#" class="btn boton-shared" data-event="talleres">QUIERO INSCRIBIRME!</a>	
 					</div>
 					
 				</div>
 			</div>
 		</article>
-		</div>
+	</div>
 	<?php include 'footer.php'; ?>	
-
 </body>
 </html>
 

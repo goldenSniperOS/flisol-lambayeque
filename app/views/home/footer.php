@@ -124,7 +124,7 @@
 		          		method : 'post',
 		          		data:{status : response.post_id},
 		          		success: function(data){
-		          			window.location = 'Home/'+events;
+		          			window.location = events;
 		          		},
 		          		error: function(data){
 		          			console.log(data);

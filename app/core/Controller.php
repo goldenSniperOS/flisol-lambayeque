@@ -40,7 +40,6 @@ class Controller
 
 	protected function view($_view,$_data = [])
 	{			
-
 		$paths = require __DIR__.'/../paths.php';
 		$view = $this->load_name_file($_view);
 		extract($_data, EXTR_PREFIX_SAME, "wddx");
