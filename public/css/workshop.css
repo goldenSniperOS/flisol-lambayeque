@@ -89,7 +89,7 @@
 
 
 	#w1 p {
-		color: #E17C24;
+		color: #F27E27;
 	}
 
 	#w1 p > a {
@@ -103,14 +103,14 @@
 #w2 {
 	background-image: 
     linear-gradient(
-      rgba(0, 0, 0, 0.6), 
-      rgba(0, 0, 0, 0.6)
+      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7)
     ),  
     url(../img/bg_ws_02.jpg);   
 }
 
 	#w2 p {
-		color: #E17C24;
+		color: #F27E27;
 	}
 
 	#w2 p > a {
