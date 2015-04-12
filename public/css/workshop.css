@@ -153,6 +153,26 @@
 	}
 }
 
+.margin-top{
+	margin-top: 1em;
+}
+.boton-shared{
+	display: block;
+	padding: 15px;
+	color: #000;
+	border:2px solid #47639e;
+	  background: #f6f7f8;
+	border-radius: 5px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+.boton-shared:hover{
+	text-decoration: none;
+	color:#fff;
+	background: #47639e;
+}
+
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
 
@@ -162,3 +182,4 @@
 @media (min-width: 1200px) {
 
 }
+

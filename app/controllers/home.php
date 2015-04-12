@@ -20,5 +20,9 @@ class Home extends Controller
 		
 	}
 
+	public function shared(){
+		echo json_encode(array('algo' => $_POST['status']));
+	}
+
 	
 }

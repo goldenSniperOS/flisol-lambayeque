@@ -86,4 +86,54 @@
 			  });	
 		}
 		google.maps.event.addDomListener(window, 'load', initialize);
+		window.fbAsyncInit = function() {
+		    FB.init({
+		      appId                : "1579839032302060",
+		      status               : true, // check login status
+		      xfbml      : true,
+      		  version    : 'v2.3',
+		      frictionlessRequests : true,
+		      cookie:  false,
+		    });
+		  };
+
+		  // Load the SDK Asynchronously
+		  (function(d, s, id) {
+		    var js, fjs = d.getElementsByTagName(s)[0];
+		    if (d.getElementById(id)) return;
+		    js = d.createElement(s); js.id = id;
+		    js.src = "//connect.facebook.net/es_ES/all.js";
+		    fjs.parentNode.insertBefore(js, fjs);
+		  }(document, 'script', 'facebook-jssdk'));
+		function shareOnFacebook() {
+		    FB.ui(
+		      {
+		        method        : 'feed',
+		        name          : 'FLISOL CHICLAYO 2015',
+		        link          : 'http://www.flisol-chiclayo.com',
+		        picture       : 'http://www.linktoshare.com/images/imagethumbnail.png',
+		        caption       : 'txt caption',
+		        description   : 'txt description',
+		      },
+		      function(response) {
+		        if (response && response.post_id) {
+
+		          $.ajax({
+		          		url: 'Home/shared',
+		          		method : 'post',
+		          		data:{status : response.post_id},
+		          		success: function(data){
+		          			console.log(data);
+		          		},
+		          		error: function(data){
+		          			console.log(data);
+		          		}
+		          });
+
+		        } else {
+		          //alert('Post was not published.');
+		        }
+		      }
+		    );
+		  }
 	</script>

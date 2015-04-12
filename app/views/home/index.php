@@ -50,6 +50,20 @@
 				</div>
 			</div>
 		</article>
+		<article class="margin-top">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 col-sm-3 col-md-4 col-lg-6">	
+						<div class="well">
+							<a href="#" class="boton-shared" onclick="shareOnFacebook();">Compartir para inscribirme</a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-9 col-md-8 col-lg-6">
+					</div>
+					
+				</div>
+			</div>
+		</article>
 		</div>
 	<?php include 'footer.php'; ?>	
 
