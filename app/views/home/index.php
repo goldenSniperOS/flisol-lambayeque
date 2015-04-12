@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>First Page Of Index</title>
+	<title>Flisol 2015</title>
 	<?=HTML::style('css/bootstrap.min.css')?>
 	<?=HTML::style('css/header.css')?>
 	<?=HTML::style('css/workshop.css')?>
