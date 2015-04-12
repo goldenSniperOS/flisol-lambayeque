@@ -13,12 +13,11 @@ class Home extends Controller
 
 	public function conferencias()
 	{
-		$user = Asistencia::find(1);
-		var_dump($user);
+		$this->view('home/conferencias.php');
 	}
 
 	public function talleres(){
-		
+		$this->view('home/talleres.php');
 	}
 
 	public function shared(){
