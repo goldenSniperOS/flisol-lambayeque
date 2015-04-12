@@ -10,8 +10,8 @@
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">INSCRIPCIONES <span class="caret"></span></a>
 						<ul class="dropdown-menu" role="menu">
-							<li><a href="detail.php">CONFERENCIAS</a></li>
-							<li><a href="detail.php">TALLERES</a></li>
+							<li><a href="<?=URL::to('home/conferencias')?>">CONFERENCIAS</a></li>
+							<li><a href="<?=URL::to('home/talleres')?>">TALLERES</a></li>
 						</ul>
 					</li>			
 				</ul>
@@ -25,8 +25,8 @@
 	<div class="visible-xs">
 		<ul id="mobile-main-menu">
 			<li><a href="index.php">INICIO</a></li>
-			<li><a href="detail.php">CONFERENCIAS</a></li>
-			<li><a href="detail.php">TALLERES</a></li>		
+			<li><a href="<?=URL::to('home/conferencias')?>">CONFERENCIAS</a></li>
+			<li><a href="<?=URL::to('home/talleres') ?>">TALLERES</a></li>		
 		</ul>
 	</div>
 </header>
