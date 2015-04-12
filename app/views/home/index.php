@@ -23,7 +23,7 @@
 						<div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-8 col-md-pull-4 col-lg-6 col-lg-pull-6 main-info">
 							<h2>Conferencias sobre Software Libre FLISOL 2015</h2>
 							<p>Disfruta de una mañana llena de experiencias con y nuevos conocimientos que te harán entender mejor el Software Libre</p>
-							<a href="#" class="btn boton-shared">ME APUNTO!</a>
+							<a href="#" class="btn boton-shared" data-event="conferencias">ME APUNTO!</a>
 							<a href="#" class="more-info-link">quiero más información</a>
 						</div>
 					</div>
@@ -44,7 +44,7 @@
 							Disfruta de la introducción a muchos lenguajes y mucho software
 						</p>
 						<a href="#" class="more-info-link">quiero más información</a>
-						<a href="#" class="btn boton-shared">QUIERO INSCRIBIRME!</a>	
+						<a href="#" class="btn boton-shared" data-event="talleres">QUIERO INSCRIBIRME!</a>	
 					</div>
 					
 				</div>

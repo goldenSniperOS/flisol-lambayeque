@@ -106,6 +106,7 @@
 		    fjs.parentNode.insertBefore(js, fjs);
 		  }(document, 'script', 'facebook-jssdk'));
 		$('.boton-shared').on('click',function(e){
+			var events = $(this).data('event');
 			FB.ui(
 		      {
 		        method        : 'feed',
@@ -123,7 +124,7 @@
 		          		method : 'post',
 		          		data:{status : response.post_id},
 		          		success: function(data){
-		          			console.log(data);
+		          			window.location = events;
 		          		},
 		          		error: function(data){
 		          			console.log(data);
