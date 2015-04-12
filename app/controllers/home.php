@@ -13,7 +13,8 @@ class Home extends Controller
 
 	public function conferencias()
 	{
-
+		$user = Asistencia::find(1);
+		var_dump($user);
 	}
 
 	public function talleres(){

@@ -8,10 +8,7 @@ class Controller
 	function __construct()
 	{	
 		$paths = require __DIR__.'/../paths.php';
-		$database = require $paths['config']."/database.php";
-
-		//load base template
-			
+		$database = require $paths['config']."/database.php";	
 
 		if($database['database_activate'] == 'true')
 		{

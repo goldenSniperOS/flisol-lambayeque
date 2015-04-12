@@ -24,7 +24,7 @@ return array(
 
 	'mysql' => array(
 			'driver' => 'mysql',
-			'host' => '127.0.0.1',
+			'host' => 'localhost',
 			'username' => 'root',
 			'password' => '',
 			'database' => 'flisol',
