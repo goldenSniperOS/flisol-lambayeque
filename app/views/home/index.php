@@ -2,11 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-<<<<<<< HEAD
-	<title>Flisol 2015</title>
-=======
 	<title>FLISOL Lambayeque 2015</title>
->>>>>>> origin/master
 	<?=HTML::style('css/bootstrap.min.css')?>
 	<?=HTML::style('css/header.css')?>
 	<?=HTML::style('css/workshop.css')?>
