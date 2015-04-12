@@ -9,7 +9,14 @@ class Home extends Controller
 		$this->view('home/index');
 	}
 
-	
+	public function conferencias()
+	{
+
+	}
+
+	public function talleres(){
+		
+	}
 
 
 	function __construct() {

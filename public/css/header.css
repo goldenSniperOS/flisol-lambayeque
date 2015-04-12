@@ -32,7 +32,7 @@ ul li {
 	z-index: 99;
 
     /*background-color: rgb(255, 124, 36);*/
-    background-color: #E17C24;
+    background-color: #F27E27;
     /* For IE 8*/
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#11000000, endColorstr=#11000000)";
 	-moz-box-shadow: 0 1px 5px #999;
@@ -88,11 +88,11 @@ ul li {
 
 .dropdown-menu > li > a{
   background-color: #fff;
-  color:#E17C24 !important;
+  color:#F27E27 !important;
 }
 
 .dropdown-menu > li > a:hover{
-	background-color: #E17C24;
+	background-color: #F27E27;
 	color:#fff !important;
 }
 
@@ -114,7 +114,7 @@ ul li {
 	width: 100%;
 	padding: 10px 0;
 	border-top: 1px solid #eee;
-	color: #E17C24;
+	color: #F27E27;
 	text-align: center;
 	text-transform: uppercase;
 	background-color: #fff;
