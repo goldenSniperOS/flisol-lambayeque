@@ -11,7 +11,7 @@ return array(
 	| 'false' para desactivarla
 	*/
 
-	'database_activate' => 'false',
+	'database_activate' => 'true',
 
 	/*
 	|--------------------------------------------------------------------------
