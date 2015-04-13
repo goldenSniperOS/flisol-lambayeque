@@ -13,7 +13,8 @@ class Home extends Controller
 
 	public function conferencias()
 	{
-		$this->view('home/conferencias.php');
+		$eventos = Evento::all();
+		$this->view('home/conferencias.php',array('eventos' => $eventos));
 	}
 
 	public function talleres(){

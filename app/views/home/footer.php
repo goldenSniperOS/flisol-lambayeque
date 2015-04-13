@@ -42,6 +42,7 @@
 </footer>
 	<?=HTML::script('js/jquery-1.11.2.min.js')?>	
 	<?=HTML::script('js/bootstrap.min.js')?>
+	<?=HTML::script('js/bootstrap-select.min.js')?>
 	<script>
 		function toggleMobileMenu() 
 		{
@@ -51,6 +52,7 @@
 
 		$(document).ready(function() {
 			$('#mobile-menu-button').on('click', toggleMobileMenu);
+			$('.selectpicker').selectpicker();
 		});
 	</script>
 	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>

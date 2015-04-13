@@ -9,10 +9,11 @@
 	<?=HTML::style('css/footer_location.css')?>
 	<?=HTML::style('css/font-awesome.min.css')?>
 	<?=HTML::style('css/form-register.css')?>
+	<?=HTML::style('css/bootstrap-select.min.css')?>
 </head>
 <body>
 	<?php include 'header.php'; ?>	
-	<section class="form-register">
+	<div class="form-register">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-8">
@@ -27,19 +28,19 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" role="listbox">
 					    <div class="item active">
-					      <img src="<?=URL::to('img/index.svg')?>" alt="...">
+					      <?=HTML::image('img/index.jpg')?>"
 					      <div class="carousel-caption">
 					        Primer Slide
 					      </div>
 					    </div>
 					    <div class="item">
-					      <img src="<?=URL::to('img/index.svg')?>" alt="...">
+					      <?=HTML::image('img/index.jpg')?>"
 					      <div class="carousel-caption">
 					        Segundo Slide
 					      </div>
 					    </div>
 					    <div class="item">
-					      <img src="<?=URL::to('img/index.svg')?>" alt="...">
+					      <?=HTML::image('img/index.jpg')?>"
 					      <div class="carousel-caption">
 					        Tercer Slide
 					      </div>
@@ -57,19 +58,42 @@
 					  </a>
 					</div>
 				</div>
-				<div class="col-lg-4"></div>
-			</div>
-			<div class="container">
-				<div class="row">
-						
-						
-						<div class="col-xs-12">
-							
-						</div>
+				<div class="col-lg-4 form-content">
+					<form action="<?=URL::to('home/registrarconferencia')?>" method='post'>
+						<div class="form-group">
+			                <div class="input-group">
+			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+			                    <input type="text" placeholder="Nombres" name="nombres" required autofocus class="form-control">
+			                </div>
+			            </div>
+			            <div class="form-group">
+			                <div class="input-group">
+			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+			                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" name="password" required>
+			                </div>
+			            </div>
+			            <div class="form-group">
+			                <div class="input-group">
+			                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+			                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
+			                </div>
+			            </div>				
+						<div class="form-group">
+		                    <select id="Taller" title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="taller" required>
+		                    <?php 
+		                    	if($eventos)
+		                    		foreach($eventos as $evento)
+		                               	if($evento->tipo_evento == 1)
+		                                	echo "<option value=".$evento->nombre.">".$evento->nombre."</option>";	                    	
+		                    ?>
+		                    </select>
+	                    </div>  
+			            <button class="btn btn-lg btn-primary btn-block btn-success botonreg" type="submit">Registrar Inscripción</button>
+		            </form>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 	<?php include 'footer.php'; ?>	
 </body>
 </html>
