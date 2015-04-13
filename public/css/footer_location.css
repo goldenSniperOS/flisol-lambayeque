@@ -17,10 +17,7 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-	section {
-		margin: 40px 0;
-	}
-
+	
 	.detail h2 {
 		font-size: 48px;
 		font-size: 4.8rem;
