@@ -1,7 +1,10 @@
 .form-register
 {
 	padding:100px 0px;
-	background: url(http://1.bp.blogspot.com/_ghaIqy9c4MM/TSusZ_IzpXI/AAAAAAAAAnc/0odtuhLdBX4/s1600/lambayeque.jpg) fixed;
+	background: linear-gradient(
+      rgba(0, 0, 0, 0.4), 
+      rgba(0, 0, 0, 0.4)
+    ),url(http://test.peruagency.com/wp-content/uploads/2014/10/lugar-lambayeque-chiclayo-7.jpg) fixed;
 	background-size: 100% 100%;
 
 }
