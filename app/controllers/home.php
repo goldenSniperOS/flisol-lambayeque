@@ -18,7 +18,18 @@ class Home extends Controller
 	}
 
 	public function talleres(){
-		$this->view('home/talleres.php');
+		$eventos = Evento::all();
+		$this->view('home/talleres.php',array('eventos' => $eventos));
+	}
+
+	public function registrarevento(){
+		$asistencia = new Asistencia;
+		$asistencia->nombres = $_POST['nombres'];
+		$asistencia->apellidos = $_POST['apellidos'];
+		$asistencia->email = $_POST['email'];
+		$asistencia->cod_insc = $_POST['evento'];
+		$asistencia->save();
+		echo 'Asistencia registrada correctamente';
 	}
 
 	public function shared(){

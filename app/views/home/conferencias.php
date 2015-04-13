@@ -59,7 +59,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 form-content">
-					<form action="<?=URL::to('home/registrarconferencia')?>" method='post'>
+					<form action="<?=URL::to('home/registrarevento')?>" method='post'>
 						<div class="form-group">
 			                <div class="input-group">
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
@@ -69,7 +69,7 @@
 			            <div class="form-group">
 			                <div class="input-group">
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-			                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" name="password" required>
+			                    <input type="text" class="form-control" id="apellidos" placeholder="Apellidos" name="apellidos" required>
 			                </div>
 			            </div>
 			            <div class="form-group">
@@ -79,12 +79,12 @@
 			                </div>
 			            </div>				
 						<div class="form-group">
-		                    <select id="Taller" title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="taller" required>
+		                    <select id="Taller" title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="evento" required>
 		                    <?php 
 		                    	if($eventos)
 		                    		foreach($eventos as $evento)
 		                               	if($evento->tipo_evento == 1)
-		                                	echo "<option value=".$evento->nombre.">".$evento->nombre."</option>";	                    	
+		                                	echo "<option value=".$evento->cod.">".$evento->nombre."</option>";	                    	
 		                    ?>
 		                    </select>
 	                    </div>  
