@@ -28,19 +28,19 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" role="listbox">
 					    <div class="item active">
-					      <?=HTML::image('img/index.jpg')?>"
+					      <?=HTML::image('img/index.jpg')?>
 					      <div class="carousel-caption">
 					        Primer Slide
 					      </div>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/index.jpg')?>"
+					      <?=HTML::image('img/index.jpg')?>
 					      <div class="carousel-caption">
 					        Segundo Slide
 					      </div>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/index.jpg')?>"
+					      <?=HTML::image('img/index.jpg')?>
 					      <div class="carousel-caption">
 					        Tercer Slide
 					      </div>
