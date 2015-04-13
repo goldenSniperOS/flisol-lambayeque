@@ -6,19 +6,19 @@
 class HTML
 {
 	
-	public function image($normalpath)
+	public static function image($normalpath)
 	{
 		$paths = require __DIR__.'/../paths.php';
 		echo "<img src='".$paths['public']."/".$normalpath."'>";
 	}
 
-	public function style($normalpath)
+	public static function style($normalpath)
 	{
 		$paths = require __DIR__.'/../paths.php';
 		echo "<link rel='stylesheet' type='text/css' href='".$paths['public']."/".$normalpath."'>";
 	}
 
-	public function script($normalpath)
+	public static function script($normalpath)
 	{
 		$paths = require __DIR__.'/../paths.php';
 		echo "<script type='text/javascript' src='".$paths['public'].$normalpath."'></script>";
