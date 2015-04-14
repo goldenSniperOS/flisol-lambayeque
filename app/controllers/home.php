@@ -23,12 +23,26 @@ class Home extends Controller
 	}
 
 	public function registrarevento(){
-		$asistencia = new Asistencia;
-		$asistencia->nombres = $_POST['nombres'];
-		$asistencia->apellidos = $_POST['apellidos'];
-		$asistencia->email = $_POST['email'];
-		$asistencia->cod_insc = $_POST['evento'];
-		$asistencia->save();
+		if(isset($_POST['nombres']) 
+			&& isset($_POST['apellidos'])
+			&& isset($_POST['email']) )
+			{
+				$asistente = new Asistente;
+				$asistente->nombres = $_POST['nombres'];
+				$asistente->apellidos = $_POST['apellidos'];
+				$asistente->email = $_POST['email'];
+				$asistente->save();
+
+				$eventos = $_POST['eventos'];
+				foreach ($eventos as $evento) {
+					$asistencia = new Asistencia;
+					$ult_asistente = Asistente::orderBy('cod_asistente', 'desc')->first();
+					$asistencia->cod_asistente = $ult_asistente->cod_asistente;
+					$asistencia->cod_evento = $evento;
+					$asistencia->confirm_asis = 0;
+					$asistencia->confirm_pago = 0;
+				}
+			}
 		echo 'Asistencia registrada correctamente';
 	}
 

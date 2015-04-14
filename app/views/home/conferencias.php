@@ -79,7 +79,11 @@
 			                </div>
 			            </div>				
 						<div class="form-group">
+<<<<<<< HEAD
 		                    <select id="Taller" title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="evento" required>
+=======
+		                    <select id="Taller" multiple title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="evento[]" required>
+>>>>>>> origin/master
 		                    <?php 
 		                    	if($eventos)
 		                    		foreach($eventos as $evento)

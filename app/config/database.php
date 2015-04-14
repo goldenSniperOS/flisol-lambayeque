@@ -27,7 +27,7 @@ return array(
 			'host' => 'localhost',
 			'username' => 'root',
 			'password' => '',
-			'database' => 'flisol',
+			'database' => 'flisol2015',
 			'charset' => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix' => ''
