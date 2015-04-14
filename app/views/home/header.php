@@ -7,7 +7,7 @@
 			<div class="col-xs-7 col-md-8 col-lg-9">
 
 				<a href="#" id="mobile-menu-button" class="btn btn-default visible-xs">
-					<span class="glyphicon glyphicon-align-justify"></span> 
+					<span class="glyphicon glyphicon-align-justify"></span>
 				</a>
 			</div>
 		</div>

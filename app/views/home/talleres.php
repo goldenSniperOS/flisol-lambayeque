@@ -12,7 +12,7 @@
 	<?=HTML::style('css/bootstrap-select.min.css')?>
 </head>
 <body>
-	<?php include 'header.php'; ?>	
+	<?php include 'header.php'; ?>
 	<div class="form-register">
 		<div class="container">
 			<div class="row">
@@ -78,24 +78,24 @@
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
 			                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
 			                </div>
-			            </div>				
+			            </div>
 						<div class="form-group">
 		                    <select id="Taller" multiple title="¿A que Talleres te gustaria asistir?" class="form-control selectpicker" name="eventos[]" required>
-		                    <?php 
+		                    <?php
 		                    	if($eventos)
 		                    		foreach($eventos as $evento)
 		                               	if($evento->tipo_evento =='taller')
-		                                	echo "<option value=".$evento->cod_evento.">".$evento->nombre."</option>";	                    	
+		                                	echo "<option value=".$evento->cod_evento.">".$evento->nombre."</option>";
 		                    ?>
 		                    </select>
-	                    </div>  
+	                    </div>
 			            <button class="btn btn-lg btn-primary btn-block btn-success botonreg" type="submit">Enviar</button>
 		            </form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<?php include 'footer.php'; ?>	
+	<?php include 'footer.php'; ?>
 </body>
 </html>
 

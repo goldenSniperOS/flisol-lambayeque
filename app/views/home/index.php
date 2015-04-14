@@ -10,7 +10,6 @@
 	<?=HTML::style('css/font-awesome.min.css')?>
 	<?=HTML::style('css/form-register.css')?>
 	<?=HTML::style('css/bootstrap-select.min.css')?>
-	<?=HTML::style('css/bootstrap-select.min.css')?>
 </head>
 <body>
 	<?php include 'header.php'; ?>
@@ -127,6 +126,12 @@
 		                    ?>
 		                    </select>
 	                    </div>
+	                    <div class="form-group">
+			                <div class="input-group">
+			                    <span class="input-group-addon"><span class="text-captha-suma">8 + 6 =</span></span>
+			                    <input type="text" placeholder="La suma es?" class="form-control input-captha" name="captha-suma" required>
+			                </div>
+			            </div>
 			            <button class="btn btn-lg btn-primary btn-block btn-success botonreg" type="submit">Enviar</button>
 		            </form>
 				</div>
