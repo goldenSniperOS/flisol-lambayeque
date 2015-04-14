@@ -10,7 +10,7 @@ class Asistencia extends Eloquent
 	
 	protected $table = 'asistencia';
 	protected $primaryKey = 'cod_asistencia';
-	protected $fillable = ['nombres','apellidos','email','cod_insc','confir_asis'];
+	protected $fillable = ['cod_asistente','cod_evento','confir_asis','confirm_pago'];
 	public $timestamps = false;
 
 }
