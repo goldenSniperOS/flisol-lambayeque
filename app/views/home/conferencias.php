@@ -79,12 +79,12 @@
 			                </div>
 			            </div>				
 						<div class="form-group">
-		                    <select id="Taller" multiple title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="evento" required>
+		                    <select id="Taller" title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="evento" required>
 		                    <?php 
 		                    	if($eventos)
 		                    		foreach($eventos as $evento)
 		                               	if($evento->tipo_evento == 1)
-		                                	echo "<option value=".$evento->cod.">".$evento->nombre."</option>";	                    	
+		                                	echo "<option value=".$evento->cod_evento.">".$evento->nombre."</option>";	                    	
 		                    ?>
 		                    </select>
 	                    </div>  

@@ -84,7 +84,7 @@
 		                    	if($eventos)
 		                    		foreach($eventos as $evento)
 		                               	if($evento->tipo_evento == 2)
-		                                	echo "<option value=".$evento->cod.">".$evento->nombre."</option>";	                    	
+		                                	echo "<option value=".$evento->cod_evento.">".$evento->nombre."</option>";	                    	
 		                    ?>
 		                    </select>
 	                    </div>  
