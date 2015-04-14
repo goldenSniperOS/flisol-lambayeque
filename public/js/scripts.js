@@ -7,7 +7,7 @@ jQuery(document).ready(function($) {
 	$email_regex = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i;
 
 	$register_form.submit(function(e){
-		$form_valid = false;
+		$form_valid = true;
 
 		//Eliminamos mensajes de errores
 		$register_form.find('input[type=text]').focus(function() {
