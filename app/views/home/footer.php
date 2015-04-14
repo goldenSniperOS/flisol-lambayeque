@@ -40,13 +40,14 @@
 			</div>
 	</div>
 </footer>
-	<?=HTML::script('js/jquery-1.11.2.min.js')?>	
+	<?=HTML::script('js/jquery-1.11.2.min.js')?>
 	<?=HTML::script('js/bootstrap.min.js')?>
 	<?=HTML::script('js/bootstrap-select.min.js')?>
+	<?=HTML::script('js/scripts.js')?>
 	<script>
-		function toggleMobileMenu() 
+		function toggleMobileMenu()
 		{
-			var $mobileMenu = $('#mobile-main-menu');	
+			var $mobileMenu = $('#mobile-main-menu');
 			$mobileMenu.slideToggle('fast');
 		}
 
@@ -59,13 +60,13 @@
 	<script>
 		var map;
 		var zoomW = 0;
-		
+
 		if($(window).width() <= 768 )
 			zoomW = 17;
 		else
 			zoomW = 18;
-		
-		function initialize() 
+
+		function initialize()
 		{
 			var mapOptions = {
 				zoom: zoomW,
@@ -85,7 +86,7 @@
 			      position: new google.maps.LatLng(-6.706347, -79.907634),
 			      map: map,
 			      title: 'Auditorio'
-			  });	
+			  });
 		}
 		google.maps.event.addDomListener(window, 'load', initialize);
 		window.fbAsyncInit = function() {

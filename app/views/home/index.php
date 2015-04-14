@@ -10,17 +10,18 @@
 	<?=HTML::style('css/font-awesome.min.css')?>
 	<?=HTML::style('css/form-register.css')?>
 	<?=HTML::style('css/bootstrap-select.min.css')?>
+	<?=HTML::style('css/bootstrap-select.min.css')?>
 </head>
 <body>
-	<?php include 'header.php'; ?>	
+	<?php include 'header.php'; ?>
 	<div id="workshop-list">
-		<article id="w1" class="workshop workshop-left">		
+		<article id="w1" class="workshop workshop-left">
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-3 col-sm-push-9 col-md-4 col-md-push-8 col-lg-6 col-lg-push-6 date-info">
 							<h3 class="highlighted">HORARIO: MAÑANA</h3>
 							<h3 class="highlighted">INGRESO GRATIS</h3>
-							<h3 class="highlighted">25 de abril</h3>							
+							<h3 class="highlighted">25 de abril</h3>
 						</div>
 						<div class="col-xs-12 col-sm-9 col-sm-pull-3 col-md-8 col-md-pull-4 col-lg-6 col-lg-pull-6 main-info">
 							<h2>Conferencias sobre Software Libre FLISOL 2015</h2>
@@ -44,9 +45,9 @@
 						<p>Momento para aprender en lo práctico el uso de software libre, como la programacion del mismo.
 							Disfruta de la introducción a muchos lenguajes y mucho software
 						</p>
-						<a href="#" class="btn boton-shared" data-event="talleres">QUIERO INSCRIBIRME!</a>	
+						<a href="#" class="btn boton-shared" data-event="talleres">QUIERO INSCRIBIRME!</a>
 					</div>
-					
+
 				</div>
 			</div>
 		</article>
@@ -98,7 +99,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 form-content">
-					<form action="<?=URL::to('home/registrarevento')?>" method='post'>
+					<form id="register-form" action="<?=URL::to('home/registrarevento')?>" method='post'>
 						<div class="form-group">
 			                <div class="input-group">
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
@@ -116,23 +117,23 @@
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
 			                    <input type="email" class="form-control" id="email" placeholder="Email" name="email" required>
 			                </div>
-			            </div>				
+			            </div>
 						<div class="form-group">
 		                    <select id="Taller" multiple title="¿A que eventos te gustaria asistir?" class="form-control selectpicker" name="evento[]" required>
-		                    <?php 
+		                    <?php
 		                    	if($eventos)
 		                    		foreach($eventos as $evento)
-		                                echo "<option value=".$evento->cod_evento.">".$evento->tipo_evento.' - '.$evento->nombre."</option>";	                    	
+		                                echo "<option value=".$evento->cod_evento.">".$evento->tipo_evento.' - '.$evento->nombre."</option>";
 		                    ?>
 		                    </select>
-	                    </div>  
+	                    </div>
 			            <button class="btn btn-lg btn-primary btn-block btn-success botonreg" type="submit">Enviar</button>
 		            </form>
 				</div>
 			</div>
 		</div>
 	</div>
-	<?php include 'footer.php'; ?>	
+	<?php include 'footer.php'; ?>
 </body>
 </html>
 

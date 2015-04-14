@@ -6,8 +6,8 @@ return array(
 	|--------------------------------------------------------------------------
 	| Activador de Base de Datos
 	|--------------------------------------------------------------------------
-	| 
-	| Depende de este valor como 'true' para activar la conexion a la base o 
+	|
+	| Depende de este valor como 'true' para activar la conexion a la base o
 	| 'false' para desactivarla
 	*/
 
@@ -17,7 +17,7 @@ return array(
 	|--------------------------------------------------------------------------
 	| Conexion MySQL
 	|--------------------------------------------------------------------------
-	| 
+	|
 	| Se colocan los parámetros de Conexion a la Base de Datos
 	*/
 

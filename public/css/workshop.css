@@ -2,12 +2,12 @@
 	width: 100%;
 	min-height: 400px;
 	padding: 100px 0;
-	
+
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
 
-	font-weight: 300;	
+	font-weight: 300;
 }
 
 .workshop p {
@@ -16,7 +16,7 @@
 }
 
 .main-info {
-	
+
 }
 
 .main-info h2 {
@@ -46,7 +46,7 @@
 	display: inline-block;
 	padding: 3px 10px;
 	margin: 0 0 4px 0;
-	
+
 	color: #fff;
 	font-weight: 200;
 	text-transform: uppercase;
@@ -67,9 +67,9 @@
 }
 
 #w1 {
-	background-image: 
+	background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.3), 
+      rgba(0, 0, 0, 0.3),
       rgba(0, 0, 0, 0.3)
     ),
     url(../img/bg_ws_01.jpg);
@@ -81,12 +81,12 @@
 
 
 #w2 {
-	background-image: 
+	background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.7), 
+      rgba(0, 0, 0, 0.7),
       rgba(0, 0, 0, 0.7)
-    ),  
-    url(../img/bg_ws_02.jpg);   
+    ),
+    url(../img/bg_ws_02.jpg);
 }
 
 	#w2 p {
@@ -94,7 +94,7 @@
 	}
 
 /* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) { 
+@media (min-width: 768px) {
 
 	.main-info h2 {
 		font-size: 56px;
@@ -154,3 +154,56 @@
 
 }
 
+
+
+/* Validate Form*/
+
+.form-group {
+	position: relative;
+}
+
+.tooltip-form {
+	position: absolute; top: -20px; left: 100px;
+	padding: 2px 15px;
+	border: 1px solid #222222;
+	background: #333333;
+	color: white;
+	font-size: 0.8em;
+	z-index: 9999;
+	border-radius: 3px;
+}
+.tooltip-form:after,
+.tooltip-form:before {
+	position: absolute; top: 100%; left: 50%;
+	content: " ";
+	width: 0; height: 0;
+	border: solid transparent;
+}
+
+.tooltip-form:after {
+	border-color: rgba(51, 51, 51, 0);
+	border-top-color: #333333;
+	border-width: 7px;
+	margin-left: -7px;
+}
+.tooltip-form:before {
+	border-color: rgba(0, 0, 0, 0);
+	border-top-color: #222222;
+	border-width: 8px;
+	margin-left: -8px;
+}
+
+/* error */
+
+.tooltip-form.error {
+	background: #E4605F;
+	border: 1px solid #DE3838;
+	color: white;
+}
+
+.tooltip-form.error:after {
+	border-top-color: #E4605F;
+}
+.tooltip-form.error:before {
+	border-top-color: #DE3838;
+}
