@@ -16,6 +16,7 @@
 	<div class="form-register">
 		<div class="container">
 			<div class="row">
+				<?php if(isset($mensaje)) echo '<div class="alert alert-success">'.$mensaje.'</div>' ?>
 				<div class="col-lg-8">
 					<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 					  <!-- Indicators -->
@@ -79,20 +80,16 @@
 			                </div>
 			            </div>				
 						<div class="form-group">
-<<<<<<< HEAD
-		                    <select id="Taller" title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="evento" required>
-=======
-		                    <select id="Taller" multiple title="¿En que Conferencia Deseas Inscribirte?" class="form-control selectpicker" name="evento[]" required>
->>>>>>> origin/master
+		                    <select id="Taller" multiple title="¿A que Conferencias te gustaria asistir?" class="form-control selectpicker" name="evento[]" required>
 		                    <?php 
 		                    	if($eventos)
 		                    		foreach($eventos as $evento)
-		                               	if($evento->tipo_evento == 1)
+		                               	if($evento->tipo_evento == 'conferencia')
 		                                	echo "<option value=".$evento->cod_evento.">".$evento->nombre."</option>";	                    	
 		                    ?>
 		                    </select>
 	                    </div>  
-			            <button class="btn btn-lg btn-primary btn-block btn-success botonreg" type="submit">Registrar Inscripción</button>
+			            <button class="btn btn-lg btn-primary btn-block btn-success botonreg" type="submit">Enviar</button>
 		            </form>
 				</div>
 			</div>

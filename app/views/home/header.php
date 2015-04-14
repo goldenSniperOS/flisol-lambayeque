@@ -5,16 +5,6 @@
 				<div id="main-logo"></div>
 			</div>
 			<div class="col-xs-7 col-md-8 col-lg-9">
-				<ul id="main-menu" class="nav nav-pills hidden-xs">
-					<li class="active"><a href="<?=URL::to('')?>">INICIO</a></li>
-					<li class="dropdown">
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#">INSCRIPCIONES <span class="caret"></span></a>
-						<ul class="dropdown-menu" role="menu">
-							<li><a href="<?=URL::to('home/conferencias')?>">CONFERENCIAS</a></li>
-							<li><a href="<?=URL::to('home/talleres')?>">TALLERES</a></li>
-						</ul>
-					</li>			
-				</ul>
 
 				<a href="#" id="mobile-menu-button" class="btn btn-default visible-xs">
 					<span class="glyphicon glyphicon-align-justify"></span> 
@@ -23,10 +13,5 @@
 		</div>
 	</div>
 	<div class="visible-xs">
-		<ul id="mobile-main-menu">
-			<li><a href="index.php">INICIO</a></li>
-			<li><a href="<?=URL::to('home/conferencias')?>">CONFERENCIAS</a></li>
-			<li><a href="<?=URL::to('home/talleres') ?>">TALLERES</a></li>			
-		</ul>
 	</div>
 </header>
