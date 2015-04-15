@@ -123,7 +123,7 @@
 		        if (response && response.post_id) {
 
 		          $.ajax({
-		          		url: 'Home/shared',
+		          		url: 'home/shared',
 		          		method : 'post',
 		          		data:{status : response.post_id},
 		          		success: function(data){
