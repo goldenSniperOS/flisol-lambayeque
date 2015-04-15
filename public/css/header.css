@@ -1,6 +1,10 @@
+@import url(http://fonts.googleapis.com/css?family=Quicksand:700);
 body {
 	margin-top: 80px;
-	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+/*	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
+	font-family: 'Quicksand', sans-serif;
+}
+
 }
 
 p {
