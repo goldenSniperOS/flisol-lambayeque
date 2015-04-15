@@ -35,10 +35,10 @@ class Home extends Controller
 						$asistencia->save();
 					}
 					$mensaje = array('mensaje' => 'Gracias por ser parte de FLISOL 2015.');
-					$this->view('home/talleres',$mensaje);
+					$this->view('home/index',$mensaje);
 				}else{
 					$mensaje = array('mensaje' => 'Ya tenemos un asistente con este correo, gracias por participar.');
-					$this->view('home/talleres',$mensaje);
+					$this->view('home/index',$mensaje);
 				}
 			}
 	}
