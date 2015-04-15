@@ -98,7 +98,7 @@
 					</div>
 				</div>
 				<div class="col-lg-4 form-content">
-					<form id="register-form" action="<?=URL::to('home/registrarevento')?>" method='post'>
+					<form id="register-form" action="" method='post'>
 						<div class="form-group">
 			                <div class="input-group">
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
