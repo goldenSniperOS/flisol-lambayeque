@@ -90,11 +90,7 @@
 
 footer {
 	padding: 30px 0;
-	background-color: #333;
-}
-footer {
-	padding: 30px 0;
-	background-color: #333;
+	background-color: #fff;
 }
 
 footer a, footer a:hover {
@@ -104,15 +100,11 @@ footer a, footer a:hover {
 
 footer h3 {
 	margin-top: 30px;
-	color: #fff;
+	color: #000;
 	font-size: 16px;
 	font-size: 1.6rem;
 	text-transform: uppercase;
-}
-
-footer p {
-	color: #ddd;
-	font-weight: 200;
+	padding-bottom: 30px;
 }
 
 #next-workshops a {
@@ -162,7 +154,7 @@ footer p {
 
 .ceti{
 	background: url(../img/ceti.jpg);
-	background-size:100% 100%;
+	background-size:100% 100%;	
 	width: 100% !important;
 	height: 150px !important;
 }
