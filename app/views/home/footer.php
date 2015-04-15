@@ -109,37 +109,5 @@
 		    js.src = "//connect.facebook.net/es_ES/all.js";
 		    fjs.parentNode.insertBefore(js, fjs);
 		  }(document, 'script', 'facebook-jssdk'));
-		$('.boton-shared').on('click',function(e){
-			var events = $(this).data('event');
-			FB.ui(
-		      {
-		        method        : 'feed',
-		        name          : 'FLISOL CHICLAYO 2015',
-		        link          : 'http://www.flisol-chiclayo.com',
-		        picture       : 'http://www.linktoshare.com/images/imagethumbnail.png',
-		        caption       : 'txt caption',
-		        description   : 'txt description',
-		      },
-		      function(response) {
-		        if (response && response.post_id) {
 
-		          $.ajax({
-		          		url: 'home/shared',
-		          		method : 'post',
-		          		data:{status : response.post_id},
-		          		success: function(data){
-		          			window.location = events;
-		          		},
-		          		error: function(data){
-		          			console.log(data);
-		          		}
-		          });
-
-		        } else {
-		          //alert('Post was not published.');
-		        }
-		      }
-		    );
-		    e.preventDefault();
-		});
 	</script>
