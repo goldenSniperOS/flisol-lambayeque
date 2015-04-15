@@ -10,7 +10,8 @@
 				</div>
 				<div class="hotel">
 					<h4>Contáctanos</h4>
-					<p><a href="#"><i class="fa fa-facebook-official fa-3x" style="color:#47639E;"></i></a></p>
+					<p>flisol.lambayeque.libre@gmail.com</p>
+					<p><a href="https://www.facebook.com/flisolLambayeque?fref=ts"><i class="fa fa-facebook-official fa-3x" style="color:#47639E;"></i></a></p>
 				</div>
 			</div>
 		</div>
@@ -27,16 +28,16 @@
 				<div class="hackspace"></div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-2">
-				<div class="ausp"></div>
+				<div class="ceti"></div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-2">
-				<div class="ausp"></div>
+				<div class="adyl"></div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-2">
-				<div class="ausp"></div>
+				<div class="epici"></div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-md-2">
-				<div class="ausp"></div>
+				<div class="epis"></div>
 			</div>
 	</div>
 </footer>

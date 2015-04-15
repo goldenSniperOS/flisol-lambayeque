@@ -158,3 +158,32 @@ footer p {
 	width: 100% !important;
 	height: 150px !important;
 }
+
+
+.ceti{
+	background: url(../img/ceti.jpg);
+	background-size:100% 100%;
+	width: 100% !important;
+	height: 150px !important;
+}
+
+.adyl{
+	background: url(../img/logo_adyl.png);
+	background-size:100% 100%;
+	width: 100% !important;
+	height: 120px !important;
+}
+
+.epici{
+	background: url(../img/computacion.jpg);
+	background-size:100% 100%;
+	width: 100% !important;
+	height: 150px !important;
+}
+
+.epis{
+	background: url(../img/LogoEpisOriginal.png);
+	background-size:100% 100%;
+	width: 100% !important;
+	height: 150px !important;
+}
