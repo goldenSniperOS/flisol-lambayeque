@@ -37,7 +37,7 @@ class Home extends Controller
 				$this->view('home/index',array('mensaje' => $mensaje,'eventos' => $eventos));
 			}
 		}else{
-			$this->view('home/index.php',array('eventos' => $eventos));
+			$this->view('home/index.php',array('eventos' => $eventos,'mensaje' => NULL));
 		}
 	}
 }

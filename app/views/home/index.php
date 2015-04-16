@@ -88,7 +88,7 @@
 						<div class="form-group">
 			                <div class="input-group">
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-			                    <input type="text" placeholder="Nombres" name="nombres" required class="form-control">
+			                    <input type="text" placeholder="Nombres" name="nombres" required <?php if($mensaje)echo 'autofocus';?> class="form-control">
 			                </div>
 			            </div>
 			            <div class="form-group">
