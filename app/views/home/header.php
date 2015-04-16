@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-5 col-md-4 col-lg-3">
-				<div id="main-logo"></div>
+				<div id="main-logo"><a href="#"><?=HTML::image('img/logo.jpg')?></a></div>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-sm-push-1 col-md-2 col-md-push-2 ">
 				<div class="helloworld"></div>
