@@ -110,4 +110,11 @@
 		    fjs.parentNode.insertBefore(js, fjs);
 		  }(document, 'script', 'facebook-jssdk'));
 
+		  $('.boton-shared').click(function(e)
+		  {
+		  	$('html, body').animate({
+		        scrollTop: 1000
+		    }, 1000);
+		  });
+
 	</script>
