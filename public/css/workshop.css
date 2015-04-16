@@ -161,6 +161,12 @@
 .form-group {
 	position: relative;
 }
+.text-captha-suma {
+	height: 14px;
+	display: inline-block;
+	padding: 0 5px 0 25px;
+	background:  url(../img/captha_icon_key.png) 0 0 no-repeat;
+}
 
 .tooltip-form {
 	position: absolute; top: -20px; left: 100px;

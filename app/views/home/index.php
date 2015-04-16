@@ -70,7 +70,6 @@
 						<li data-target="#carousel-example-generic" data-slide-to="6"></li>
 						<li data-target="#carousel-example-generic" data-slide-to="7"></li>
 						<li data-target="#carousel-example-generic" data-slide-to="8"></li>
-						<li data-target="#carousel-example-generic" data-slide-to="9"></li>
 					  </ol>
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" role="listbox">
@@ -91,12 +90,6 @@
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/talleres3.jpg')?>
-					    </div>
-					    <div class="item">
-					      <?=HTML::image('img/ponencia1.jpg')?>
-					      <div class="carousel-caption">
-					        Septimo Slide
-					      </div>
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/ponencia2.jpg')?>
