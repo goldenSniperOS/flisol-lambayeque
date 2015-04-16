@@ -6,7 +6,7 @@ class Home extends Controller
 {
 	public function index()
 	{
-		$eventos = Evento::orderBy('tipo_evento','asc')->get();
+		$event = Evento::orderBy('tipo_evento','asc')->get();
 
 		if(isset($_POST['nombres'])
 		&& isset($_POST['apellidos'])
@@ -31,10 +31,10 @@ class Home extends Controller
 				}
 				
 				$mensaje = array('mensaje' => 'Gracias por ser parte de FLISOL 2015.','success'=>'success');
-				$this->view('home/index',array('mensaje' => $mensaje,'eventos' => $eventos));
+				$this->view('home/index',array('mensaje' => $mensaje,'eventos' => $event));
 			}else{
 				$mensaje = array('mensaje' => 'Ya tenemos un asistente con este correo, gracias por participar.','success'=>'warning');
-				$this->view('home/index',array('mensaje' => $mensaje,'eventos' => $eventos));
+				$this->view('home/index',array('mensaje' => $mensaje,'eventos' => $event));
 			}
 		}else{
 			$this->view('home/index.php',array('eventos' => $eventos,'mensaje' => NULL));
