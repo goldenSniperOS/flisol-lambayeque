@@ -6,7 +6,7 @@
 				<h3>Necesitas Más información?</h3>
 				<div class="hotel">
 					<h4>Ubicación</h4>
-					<p>Abrán 2 marcas en el mapa, la inferior es el Laboratorio de Computación y la superior el Auditorio General</p>
+					<p>Abrán 2 marcas en el mapa, la superior es el Laboratorio de Computación y la inferior el Auditorio</p>
 				</div>
 				<div class="hotel">
 					<h4>Contáctanos</h4>
@@ -74,7 +74,7 @@
 			var mapOptions = {
 				zoom: zoomW,
 				scrollwheel: false,
-				center: new google.maps.LatLng(-6.706740, -79.909563)
+				center: new google.maps.LatLng(-6.707478, -79.910511)
 			};
 			map = new google.maps.Map(document.getElementById('map-canvas'),
 			mapOptions);
@@ -82,11 +82,11 @@
 			var marker = new google.maps.Marker({
 			      position: new google.maps.LatLng(-6.707220, -79.909257),
 			      map: map,
-			      title: 'Laboratorio de Computacion'
+			      title: 'Laboratorios de Computacion'
 			  });
 
 			marker = new google.maps.Marker({
-			      position: new google.maps.LatLng(-6.706347, -79.907634),
+			      position: new google.maps.LatLng(-6.708010, -79.907572),
 			      map: map,
 			      title: 'Auditorio'
 			  });
