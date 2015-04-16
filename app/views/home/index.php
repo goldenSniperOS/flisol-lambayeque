@@ -66,21 +66,9 @@
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" role="listbox">
 					    <div class="item active">
-					      <?=HTML::image('img/index.jpg')?>
+					      <?=HTML::image('img/python.jpg')?>
 					      <div class="carousel-caption">
 					        Primer Slide
-					      </div>
-					    </div>
-					    <div class="item">
-					      <?=HTML::image('img/index.jpg')?>
-					      <div class="carousel-caption">
-					        Segundo Slide
-					      </div>
-					    </div>
-					    <div class="item">
-					      <?=HTML::image('img/index.jpg')?>
-					      <div class="carousel-caption">
-					        Tercer Slide
 					      </div>
 					    </div>
 					  </div>
@@ -100,7 +88,7 @@
 						<div class="form-group">
 			                <div class="input-group">
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-			                    <input type="text" placeholder="Nombres" name="nombres" required autofocus class="form-control">
+			                    <input type="text" placeholder="Nombres" name="nombres" required class="form-control">
 			                </div>
 			            </div>
 			            <div class="form-group">
