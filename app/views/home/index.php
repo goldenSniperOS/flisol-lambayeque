@@ -18,6 +18,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-xs-12 col-sm-3 col-sm-push-9 col-md-4 col-md-push-8 col-lg-6 col-lg-push-6 date-info">
+							<h3 class="highlighted">AUDITORIO UNPRG</h3>
 							<h3 class="highlighted">HORARIO: MAÑANA</h3>
 							<h3 class="highlighted">INGRESO GRATIS</h3>
 							<h3 class="highlighted">25 de abril</h3>
@@ -34,10 +35,11 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12 col-sm-3 col-md-4 col-lg-6 date-info">
+						<h3 class="highlighted">LABORATORIOS DE COMPUTACIÓN UNPRG</h3>
 						<h3 class="highlighted">HORARIO: MAÑANA</h3>
-							<h3 class="highlighted">INGRESO GRATIS</h3>
-							<h3 class="highlighted">VACANTES LIMITADAS</h3>
-							<h3 class="highlighted">25 de abril</h3>
+						<h3 class="highlighted">INGRESO GRATIS</h3>
+						<h3 class="highlighted">VACANTES LIMITADAS</h3>
+						<h3 class="highlighted">25 de abril</h3>
 					</div>
 					<div class="col-xs-12 col-sm-9 col-md-8 col-lg-6 main-info">
 						<h2>Talleres sobre Software Libre FLISOL 2015</h2>
@@ -99,30 +101,27 @@
 					    <div class="item">
 					      <?=HTML::image('img/ponencia2.jpg')?>
 					      <div class="carousel-caption">
-					        Octavo Slide
 					      </div>
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/ponencia4.jpg')?>
 					      <div class="carousel-caption">
-					        Noveno Slide
 					      </div>
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/ponencia5.jpg')?>
 					      <div class="carousel-caption">
-					        Decimo Slide
 					      </div>
 					    </div>
 					  </div>
 					  <!-- Controls -->
 					  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
 					    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-					    <span class="sr-only">Previous</span>
+					    <span class="sr-only">Anterior</span>
 					  </a>
 					  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
 					    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-					    <span class="sr-only">Next</span>
+					    <span class="sr-only">Siguiente</span>
 					  </a>
 					</div>
 				</div>
