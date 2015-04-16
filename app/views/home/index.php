@@ -71,39 +71,21 @@
 					  <div class="carousel-inner" role="listbox">
 					    <div class="item active">
 					      <?=HTML::image('img/talleres2.jpg')?>
-					      <div class="carousel-caption">
-					        Primer Slide
-					      </div>
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/talleres6.jpg')?>
-					      <div class="carousel-caption">
-					        Segundo Slide
-					      </div>
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/talleres5.jpg')?>
-					      <div class="carousel-caption">
-					        Tercer Slide
-					      </div>
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/talleres4.jpg')?>
-					      <div class="carousel-caption">
-					        Cuarto Slide
-					      </div>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/87.jpg')?>
-					      <div class="carousel-caption">
-					        Quinto Slide
-					      </div>
+					      <?=HTML::image('img/talleres1.jpg')?>
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/talleres3.jpg')?>
-					      <div class="carousel-caption">
-					        Sexto Slide
-					      </div>
 					    </div>
 					  </div>
 					  <!-- Controls -->
