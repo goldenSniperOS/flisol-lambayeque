@@ -62,25 +62,47 @@
 					    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
 					    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
 					    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+					
 					  </ol>
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" role="listbox">
 					    <div class="item active">
-					      <?=HTML::image('img/index.jpg')?>
+					      <?=HTML::image('img/talleres2.jpg')?>
 					      <div class="carousel-caption">
 					        Primer Slide
 					      </div>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/index.jpg')?>
+					      <?=HTML::image('img/talleres6.jpg')?>
 					      <div class="carousel-caption">
 					        Segundo Slide
 					      </div>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/index.jpg')?>
+					      <?=HTML::image('img/talleres5.jpg')?>
 					      <div class="carousel-caption">
 					        Tercer Slide
+					      </div>
+					    </div>
+					    <div class="item">
+					      <?=HTML::image('img/talleres4.jpg')?>
+					      <div class="carousel-caption">
+					        Cuarto Slide
+					      </div>
+					    </div>
+					    <div class="item">
+					      <?=HTML::image('img/87.jpg')?>
+					      <div class="carousel-caption">
+					        Quinto Slide
+					      </div>
+					    </div>
+					    <div class="item">
+					      <?=HTML::image('img/talleres3.jpg')?>
+					      <div class="carousel-caption">
+					        Sexto Slide
 					      </div>
 					    </div>
 					  </div>
