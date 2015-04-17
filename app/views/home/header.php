@@ -2,7 +2,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-xs-5 col-md-4 col-lg-3">
-				<div id="main-logo"><a href="http://www.helloworldperu.org"></a></div>
+				<a href="http://www.helloworldperu.org"><div id="main-logo"></div></a>
 			</div>
 			<div class="col-xs-3 col-sm-3 col-sm-push-1 col-md-2 col-md-push-2">
 				<div class="helloworld"></div>
@@ -11,7 +11,5 @@
 				<div class="ausp-menu"></div>
 			</div>
 		</div>
-	</div>
-	<div class="visible-xs">
 	</div>
 </header>
