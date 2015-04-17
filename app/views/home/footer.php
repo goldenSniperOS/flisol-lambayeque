@@ -115,7 +115,7 @@
 		  $('.boton-shared').click(function(e)
 		  {
 		  	$('html, body').animate({
-		        scrollTop: 1000
+		        scrollTop: 1050
 		    }, 1000);
 		  });
 
