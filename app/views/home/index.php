@@ -70,6 +70,7 @@
 						<li data-target="#carousel-example-generic" data-slide-to="6"></li>
 						<li data-target="#carousel-example-generic" data-slide-to="7"></li>
 						<li data-target="#carousel-example-generic" data-slide-to="8"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="9"></li>
 					  </ol>
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" role="listbox">
@@ -77,7 +78,7 @@
 					      <?=HTML::image('img/talleres2.jpg')?>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/talleres6.jpg')?>
+					      <?=HTML::image('img/taller6.png')?>
 					    </div>
 					    <div class="item">
 					      <?=HTML::image('img/talleres5.jpg')?>
@@ -92,17 +93,22 @@
 					      <?=HTML::image('img/talleres3.jpg')?>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/ponencia2.jpg')?>
+					      <?=HTML::image('img/chamilo.png')?>
 					      <div class="carousel-caption">
 					      </div>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/ponencia4.jpg')?>
+					      <?=HTML::image('img/hack_space.png')?>
 					      <div class="carousel-caption">
 					      </div>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/ponencia5.jpg')?>
+					      <?=HTML::image('img/php.png')?>
+					      <div class="carousel-caption">
+					      </div>
+					    </div>
+					    <div class="item">
+					      <?=HTML::image('img/oscarcapuñay.png')?>
 					      <div class="carousel-caption">
 					      </div>
 					    </div>
