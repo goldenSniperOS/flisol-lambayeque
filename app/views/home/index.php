@@ -71,6 +71,8 @@
 						<li data-target="#carousel-example-generic" data-slide-to="7"></li>
 						<li data-target="#carousel-example-generic" data-slide-to="8"></li>
 						<li data-target="#carousel-example-generic" data-slide-to="9"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="10"></li>
+						<li data-target="#carousel-example-generic" data-slide-to="11"></li>
 					  </ol>
 					  <!-- Wrapper for slides -->
 					  <div class="carousel-inner" role="listbox">
@@ -93,6 +95,9 @@
 					      <?=HTML::image('img/talleres3.jpg')?>
 					    </div>
 					    <div class="item">
+					      <?=HTML::image('img/blender.png')?>
+					    </div>
+					    <div class="item">
 					      <?=HTML::image('img/chamilo.png')?>
 					      <div class="carousel-caption">
 					      </div>
@@ -100,6 +105,12 @@
 					    <div class="item">
 					      <?=HTML::image('img/hack_space.png')?>
 					      <div class="carousel-caption">
+					      </div>
+					    </div>
+					     <div class="item">
+					      <?=HTML::image('img/ignite.png')?>
+					      <div class="carousel-caption">
+					      <a href="https://docs.google.com/forms/d/1pfqHbQ0r4X3jGhTvwfVVkJeMBeDUhOp30ko36jFhlA8/viewform?c=0&w=1/"><H3>Registrate!!</H3></a>
 					      </div>
 					    </div>
 					    <div class="item">
