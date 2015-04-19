@@ -110,11 +110,11 @@
 					     <div class="item">
 					      <?=HTML::image('img/ignite.png')?>
 					      <div class="carousel-caption">
-					      <a href="https://docs.google.com/forms/d/1pfqHbQ0r4X3jGhTvwfVVkJeMBeDUhOp30ko36jFhlA8/viewform?c=0&w=1/"><H3>Registrate!!</H3></a>
+					      <a href="https://docs.google.com/forms/d/1pfqHbQ0r4X3jGhTvwfVVkJeMBeDUhOp30ko36jFhlA8/viewform?c=0&w=1/" target="_blank"><H3>Registrate!!</H3></a>
 					      </div>
 					    </div>
 					    <div class="item">
-					      <?=HTML::image('img/php.png')?>
+					      <?=HTML::image('img/PHP.png')?>
 					      <div class="carousel-caption">
 					      </div>
 					    </div>
