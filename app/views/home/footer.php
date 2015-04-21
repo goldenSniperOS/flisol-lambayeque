@@ -69,6 +69,11 @@
 		else
 			zoomW = 18;
 
+		<?php 
+			if($mensaje)
+				echo " $('html, body').animate({scrollTop: 1050}, 1000);"; 
+		?>
+
 		function initialize()
 		{
 			var mapOptions = {
