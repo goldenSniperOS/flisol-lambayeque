@@ -14,7 +14,19 @@ class extra extends Controller
 		if(isset($_GET['cod_evento'])){
 			$asist = Asistencia::where('cod_evento','=',$_GET['cod_evento'])->get();
 			foreach ($asist as $asistencia) {
-				$persona[]= Asistente::where('cod_asistente','=',$asistencia->cod_asistente)->first();
+				echo $asistencia->cod_asistente;
+				$persona= Asistente::where('cod_asistente','=',$asistencia->cod_asistente)->first();
+				for ($i=0; $i < 999; $i++) { //ignora esto que lo hice para probar
+					if (isset($basto)) {
+						if(is_null($basto[$i])){
+							$basto[$i] = $persona;
+							break;
+						}
+					}else{
+						$basto[$i]= $persona;
+						break;
+					}
+				}
 			}
 			$this->view('listados/ad_personas');
 		}
