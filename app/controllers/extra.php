@@ -12,23 +12,9 @@ class extra extends Controller
 	}
 	public function evento_exacto(){
 		if(isset($_GET['cod_evento'])){
-			$asist = Asistencia::where('cod_evento','=',$_GET['cod_evento'])->get();
-			foreach ($asist as $asistencia) {
-				echo $asistencia->cod_asistente;
-				$persona= Asistente::where('cod_asistente','=',$asistencia->cod_asistente)->first();
-				for ($i=0; $i < 999; $i++) { //ignora esto que lo hice para probar
-					if (isset($basto)) {
-						if(is_null($basto[$i])){
-							$basto[$i] = $persona;
-							break;
-						}
-					}else{
-						$basto[$i]= $persona;
-						break;
-					}
-				}
-			}
-			$this->view('listados/ad_personas');
+			$persona = Asistente::join('Asistencia','Asistente.cod_asistente','=','Asistencia.cod_asistente')->
+			where('cod_evento','=',$_GET['cod_evento'])->get();
+			$this->view('listados/ad_personas',array('persona' => $persona));
 		}
 	}
 	public function full_taller(){
