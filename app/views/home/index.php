@@ -140,7 +140,7 @@
 						<div class="form-group">
 			                <div class="input-group">
 			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
-			                    <input type="text" placeholder="Nombres" name="nombres" required  class="form-control">
+			                    <input type="text" placeholder="Nombres" name="nombres" required <?php if($mensaje)echo 'autofocus'; ?> class="form-control">
 			                </div>
 			            </div>
 			            <div class="form-group">
@@ -158,6 +158,7 @@
 						<div class="form-group">
 		                    <select id="Taller" multiple title="¿A que eventos te gustaria asistir?" class="form-control selectpicker" name="evento[]" required>
 		                    <?php
+
 		                    	if($eventos)
 		                    		foreach($eventos as $evento)
 		                                echo "<option value=".$evento->cod_evento.">".$evento->tipo_evento.' - '.$evento->nombre."</option>";

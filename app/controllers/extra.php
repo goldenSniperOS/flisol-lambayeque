@@ -2,8 +2,9 @@
 class extra extends Controller
 {
 	public function index(){
-		echo "<a href='extra/full_ponencia'>Ponencias</a><br>";
-		echo "<a href='extra/full_taller'>Talleres</a>";
+		echo "<a href='full_ponencia'>Ponencias</a><br>";
+		echo "<a href='full_taller'>Talleres</a>";
+
 
 	}
 	public function full_ponencia()
@@ -52,6 +53,11 @@ class extra extends Controller
 		echo json_encode($asistente);
 	}
 
+	public function datos_eventos(){
+		$cod_evento = $_POST['cod_evento'];
+;		$evento = Evento::find($cod_evento);
+		echo json_encode($evento);
+	}
 	public function modificar(){
 		$cod_asistente = $_POST['cod_asistente'];
 		$nombres = $_POST['nombres'];
@@ -65,6 +71,30 @@ class extra extends Controller
 		echo json_encode($asistente);
 	}
 
+	public function registrar(){
 
+		if(isset($_POST['nombres'])
+		&& isset($_POST['apellidos'])
+		&& isset($_POST['email']) )
+		{	
+			$asis = Asistente::where('email','=',$_POST['email'])->first();
+			if(!$asis){
+				$asistente = new Asistente;
+				$asistente->nombres = $_POST['nombres'];
+				$asistente->apellidos = $_POST['apellidos'];
+				$asistente->email = $_POST['email'];
+				$asistente->save();
+
+				$cod_evento = $_POST['evento'];
+				$asistencia = new Asistencia;
+				$asistencia->cod_asistente = $asistente->cod_asistente;
+				$asistencia->cod_evento = $cod_evento;
+				$asistencia->confirm_asis = 0;
+				$asistencia->confirm_pago = 0;
+				$asistencia->save();
+			}
+	}
+	echo json_encode(Asistente::orderBy('apellidos','asc')->get());
+}
 }
 ?>

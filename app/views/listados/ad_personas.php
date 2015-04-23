@@ -17,7 +17,7 @@
 		
 
 	</style>
-	
+
 
 	</head>
 	<body >
@@ -81,7 +81,7 @@
 			    <div class="modal-content">
 			      <div class="modal-header">
 			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-			        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+			        <h4 class="modal-title" id="myModalLabel">Modificando Datos Participante</h4>
 			      </div>
 			      <div class="modal-body">
 			        <form action="">
@@ -104,32 +104,71 @@
 			                    <input class="form-control"  placeholder="Email" id="email_asistente_input" name="email" required="" type="email">
 			                </div>
 			            </div>
-			            <input type="hidden" id="cod_asistente_input"  >
+			            <input type="hidden" id="cod_asistente_input">
 			            <button class="btn btn-lg btn-primary btn-block btn-success " id="update"  type="submit">Enviar</button>
-		            
+			        </form>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			<br>
+			<br>
+			<div class="row" align="center" >
+				<?php 
+					foreach($persona as $people){
+						$asistent=$people->cod_asistente;
+						$event=$people->cod_evento;
+					}
+					echo "<a href='#' class='act2'  data-toggle='modal' data-target='#myModal1' id='$asistent' data-evento='$event'>Nuevo Participante</a>";
+				 ?>
+				
+			</div>
+			
+			<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			        <h4 class="modal-title" id="myModalLabel">Registrando Datos Participante</h4>
+			      </div>
+			      <div class="modal-body">
+			        <form action="">
+			        	
+						<div class="form-group">
+			                <div class="input-group">
+			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+			                    <input placeholder="Nombres" name="nombres" required="" id="nom_asistente_input1" autofocus="" class="form-control" type="text">
+			                </div>
+			            </div>
+			            <div class="form-group">
+			                <div class="input-group">
+			                    <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+			                    <input class="form-control" placeholder="Apellidos" id="ape_asistente_input1" name="apellidos" required="" type="text">
+			                </div>
+			            </div>
 
+			            <div class="form-group">
+			                <div class="input-group">
+			                    <span class="input-group-addon"><span class="glyphicon glyphicon-envelope"></span></span>
+			                    <input class="form-control"  placeholder="Email" id="email_asistente_input1" name="email" required="" type="email">
+			                </div>
+			            </div>
+			            <?php 
+			            	foreach ($persona as $person) {
+			            		$pepe = $person->cod_evento;
+
+			            		echo "<input type='hidden' id='cod_evento_input1' value='$pepe'>";
+			            	}
+			             ?>
+			          	
+			            <button class="btn btn-lg btn-primary btn-block btn-success " id="new"  type="submit">Registrar</button>
 
 			        </form>
 			      </div>
 			    </div>
 			  </div>
 			</div>
-
-			<br>
-			<br>
-			<div class="row" align="center" >
-				<a href="#" class="btn boton-shared" >Nuevo Participante</a>
-			</div>
 		</div>
-
-
-
-		
-		
-		
-		
-		
-
 	</body>
 	<?=HTML::script('js/jquery-1.11.2.min.js')?>
 	<?=HTML::script('js/bootstrap.min.js')?>

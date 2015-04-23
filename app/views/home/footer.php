@@ -69,11 +69,6 @@
 		else
 			zoomW = 18;
 
-		<?php 
-			if($mensaje)
-				echo " $('html, body').animate({scrollTop: 1050}, 1000);"; 
-		?>
-
 		function initialize()
 		{
 			var mapOptions = {
@@ -119,7 +114,6 @@
 
 		  $('.boton-shared').click(function(e)
 		  {
-		  	e.preventDefault();
 		  	$('html, body').animate({
 		        scrollTop: 1050
 		    }, 1000);
